@@ -1,3 +1,4 @@
+@import "tailwindcss";
 .searchBox input::placeholder
 {
     color: #545454 !important;

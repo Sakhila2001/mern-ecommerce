@@ -4,11 +4,11 @@
   --primary-color: #ff5252;
   --background-org: #f8f8f8;
 }
+
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
+
 body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -39,6 +39,7 @@ body {
 .p-3 {
   padding: 0.5rem;
 }
+
 .link:hover {
   color: var(--primary-color);
 }
@@ -78,4 +79,36 @@ nav ul button:hover {
 
   font-size: 22px !important;
   color: #000 !important;
+}
+.homeCatSlider {
+  overflow: inherit !important;
+}
+.homeCatSlider .swiper-button-prev, .homeCatSlider .swiper-button-next {
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+}
+.homeCatSlider .swiper-button-prev:after, .homeCatSlider .swiper-button-next:after  {
+  font-size: 16px !important;
+}
+.homeCatSlider .swiper-button-prev {
+  left: -10px !important;
+}
+.homeCatSlider .swiper-button-next {
+  right: -10px !important;
+}
+.homeCatSlider .item{
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.homeCatSlider .swiper-button-prev:hover, .homeCatSlider .swiper-button-next:hover{
+  background-color: var(--primary-color);
+}
+.homeCatSlider .swiper-button-next:hover::after, .homeCatSlider .swiper-button-prev:hover::after {
+  color: #fff !important;
+}
+
+.homeCatSlider .item:hover img{
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
 }
