@@ -17,6 +17,16 @@ body {
   overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+::-webkit-scrollbar-track {
+  background: #fff;
+}
 .container {
   width: 95%;
   margin: auto;
@@ -27,18 +37,13 @@ body {
 .bg-primary {
   background-color: var(--primary-color);
 }
-.mt-2 {
-  margin-top: 1rem;
-}
 .pb-1 {
   padding-bottom: 0.5rem;
 }
-.pl-3 {
-  padding-left: 1rem;
-}
+/* 
 .p-3 {
   padding: 0.5rem;
-}
+} */
 
 .link:hover {
   color: var(--primary-color);
@@ -74,41 +79,63 @@ nav ul button:hover {
   box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d !important;
   color: #000 !important;
 }
-.swiper-button-prev:after, .swiper-button-next:after {
-
-
+.swiper-button-prev:after,
+.swiper-button-next:after {
   font-size: 22px !important;
+  color: #000 !important;
+}
+
+.smlBtn .swiper-button-prev,
+.smlBtn .swiper-button-next {
+  width: 30px !important;
+  height: 30px !important;
+  min-width: 30px !important;
+  top: 55% !important;
+}
+.smlBtn .swiper-button-prev:after,
+.smlBtn .swiper-button-next:after {
+  font-size: 18px !important;
   color: #000 !important;
 }
 .homeCatSlider {
   overflow: inherit !important;
 }
-.homeCatSlider .swiper-button-prev, .homeCatSlider .swiper-button-next {
+.homeCatSlider .swiper-button-prev,
+.homeCatSlider .swiper-button-next {
   width: 30px;
   height: 30px;
   min-width: 30px;
 }
-.homeCatSlider .swiper-button-prev:after, .homeCatSlider .swiper-button-next:after  {
+.homeCatSlider .swiper-button-prev:after,
+.homeCatSlider .swiper-button-next:after {
   font-size: 16px !important;
 }
-.homeCatSlider .swiper-button-prev {
-  left: -10px !important;
+/* .homeCatSlider .swiper-button-prev {
+  left: 1px !important;
 }
 .homeCatSlider .swiper-button-next {
-  right: -10px !important;
-}
-.homeCatSlider .item{
+  right: 10px !important;
+} */
+.homeCatSlider .item {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.homeCatSlider .swiper-button-prev:hover, .homeCatSlider .swiper-button-next:hover{
+.homeCatSlider .swiper-button-prev:hover,
+.homeCatSlider .swiper-button-next:hover {
   background-color: var(--primary-color);
 }
-.homeCatSlider .swiper-button-next:hover::after, .homeCatSlider .swiper-button-prev:hover::after {
+.homeCatSlider .swiper-button-next:hover::after,
+.homeCatSlider .swiper-button-prev:hover::after {
   color: #fff !important;
 }
 
-.homeCatSlider .item:hover img{
+.homeCatSlider .item:hover img {
   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
+}
+.MuiTabs-indicator {
+  background-color: var(--primary-color) !important;
+}
+.MuiTab-textColorPrimary.Mui-selected {
+  color: var(--primary-color) !important;
 }
