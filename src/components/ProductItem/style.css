@@ -1,0 +1,18 @@
+.productItem .title{
+    line-height: 18px;
+}
+.productItem .actions button:hover svg{
+  color: #fff !important;
+}
+/* .productItem .actions button svg{
+  pointer-events: none !important;
+} */
+:root {
+    --primary-color: #ff5252;
+    --background-org: #6b1212;
+  }
+  
+.bg-primary{
+    background-color: var(--primary-color) !important;
+  } 
+  

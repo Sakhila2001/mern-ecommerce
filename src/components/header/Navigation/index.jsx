@@ -1,4 +1,6 @@
-import { Button } from "@mui/material";
+// import { Button } from "@mui/material";
+import Button from "@mui/material/Button";
+
 import React from "react";
 import { RiMenu2Fill } from "react-icons/ri";
 import { FaAngleDown } from "react-icons/fa6";
@@ -15,7 +17,7 @@ const Navigation = () => {
 
   return (
     <>
-      <nav className="py-2">
+      <nav className="navigation">
         <div className="container flex items-center justify-end gap-5">
           <div className="col1 w-[20%]">
             <Button
@@ -33,7 +35,7 @@ const Navigation = () => {
                   to="{/}"
                   className="link transition text-[16px] font-[500]"
                 >
-                  <Button className="link transition !font-[400] !text-[rgba(0, 0, 0, 0.8)] hover:!text-[var(--primary-color)]">
+                  <Button className="link transition !font-[400] !text-[rgba(0, 0, 0, 0.8)] hover:!text-[var(--primary-color)] !py-4">
                     Home
                   </Button>
                 </Link>
@@ -44,7 +46,7 @@ const Navigation = () => {
                   to="{/}"
                   className="link transition text-[16px] font-[500]"
                 >
-                  <Button className="link transition !font-[400] !text-[rgba(0, 0, 0, 0.8)] hover:!text-[var(--primary-color)]">
+                  <Button className="link transition !font-[400] !text-[rgba(0, 0, 0, 0.8)] hover:!text-[var(--primary-color)] !py-4">
                     Fashion
                   </Button>
                 </Link>
@@ -52,7 +54,7 @@ const Navigation = () => {
                 <div className="submenu absolute top-[120%] left-[0%] bg-white shadow-md min-w-[150px] opacity-0 transition-all">
                   <ul className="p-3">
                     <li className="list-none w-full relative">
-                      <Link to="{/}" className="w-full link transition ">
+                      <Link to="/" className="w-full link transition ">
                         <Button className="!text-[rgba(0, 0, 0, 0.8)] w-full !text-left !justify-start !rounded-none">
                           Women
                         </Button>
@@ -90,19 +92,17 @@ const Navigation = () => {
                             </li>
                           </ul>
                         </div>
-
-
                       </Link>
                     </li>
                     <li className="list-none w-full">
-                      <Link to="{/}" className="w-full link transition ">
+                      <Link to="/" className="w-full link transition ">
                         <Button className="!text-[rgba(0, 0, 0, 0.8)] w-full !text-left !justify-start !rounded-none">
                           Girls
                         </Button>
                       </Link>
                     </li>
                     <li className="list-none w-full">
-                      <Link to="{/}" className="w-full link transition ">
+                      <Link to="/" className="w-full link transition ">
                         <Button className="!text-[rgba(0, 0, 0, 0.8)] w-full !text-left !justify-start !rounded-none">
                           Men
                         </Button>
@@ -117,7 +117,7 @@ const Navigation = () => {
                   to="{/}"
                   className="link transition text-[16px] font-[500]"
                 >
-                  <Button className="link transition !font-[400] !text-[rgba(0, 0, 0, 0.8)] hover:!text-[var(--primary-color)]">
+                  <Button className="link transition !font-[400] !text-[rgba(0, 0, 0, 0.8)] hover:!text-[var(--primary-color)] !py-4">
                     Electronics
                   </Button>
                 </Link>
@@ -128,7 +128,7 @@ const Navigation = () => {
                   to="{/}"
                   className="link transition text-[16px] font-[500]"
                 >
-                  <Button className="link transition !font-[400] !text-[rgba(0, 0, 0, 0.8)] hover:!text-[var(--primary-color)]">
+                  <Button className="link transition !font-[400] !text-[rgba(0, 0, 0, 0.8)] hover:!text-[var(--primary-color)] !py-4">
                     Bags
                   </Button>
                 </Link>
@@ -139,7 +139,7 @@ const Navigation = () => {
                   to="{/}"
                   className="link transition text-[16px] font-[500]"
                 >
-                  <Button className="link transition !font-[400] !text-[rgba(0, 0, 0, 0.8)] hover:!text-[var(--primary-color)]">
+                  <Button className="link transition !font-[400] !text-[rgba(0, 0, 0, 0.8)] hover:!text-[var(--primary-color)] !py-4">
                     Footwear
                   </Button>
                 </Link>
@@ -150,7 +150,7 @@ const Navigation = () => {
                   to="{/}"
                   className="link transition text-[16px] font-[500]"
                 >
-                  <Button className="link transition !font-[400] !text-[rgba(0, 0, 0, 0.8)] hover:!text-[var(--primary-color)]">
+                  <Button className="link transition !font-[400] !text-[rgba(0, 0, 0, 0.8)] hover:!text-[var(--primary-color)] !py-4">
                     Groceries{" "}
                   </Button>
                 </Link>
@@ -161,7 +161,7 @@ const Navigation = () => {
                   to="{/}"
                   className="link transition text-[16px] font-[500]"
                 >
-                  <Button className="link transition !font-[400] !text-[rgba(0, 0, 0, 0.8)] hover:!text-[var(--primary-color)]">
+                  <Button className="link transition !font-[400] !text-[rgba(0, 0, 0, 0.8)] hover:!text-[var(--primary-color)] !py-4">
                     Wellness
                   </Button>
                 </Link>
@@ -171,7 +171,7 @@ const Navigation = () => {
                   to="{/}"
                   className="link transition text-[16px] font-[500]"
                 >
-                  <Button className="link transition !font-[400] !text-[rgba(0, 0, 0, 0.8)] hover:!text-[var(--primary-color)]">
+                  <Button className="link transition !font-[400] !text-[rgba(0, 0, 0, 0.8)] hover:!text-[var(--primary-color)] !py-4">
                     Jwellery
                   </Button>
                 </Link>
