@@ -14,6 +14,8 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import BlogItem from "../../components/BlogItem";
 import Footer from "../../components/Footer";
+import HomeBannerV2 from "../../components/HomeSliderV2";
+import BannerBoxV2 from "../../components/bannerBoxV2";
 
 const Home = () => {
   const [value, setValue] = React.useState(0);
@@ -23,9 +25,10 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <>
       <HomeSlider />
       <HomeCatSlider />
+
       {/* Popular Products Section */}
       <section className="bg-white py-3 lg:py-8">
         <div className="container">
@@ -61,6 +64,30 @@ const Home = () => {
           <ProductsSlider items={6} />
         </div>
       </section>
+
+      <section className="py-6 pt-0 bg-white">
+        <div className="container flex flex-col lg:flex-row gap-5">
+          <div className="part1 w-full lg:w-[70%]">
+            <HomeBannerV2 />
+          </div>
+
+          <div className="part2 scrollableBox w-full lg:w-[30%] flex items-center gap-5 justify-between flex-row lg:flex-col">
+            <BannerBoxV2
+              info="right"
+              image={
+                "https://serviceapi.spicezgold.com/download/1741664665391_1741497254110_New_Project_50.jpg"
+              }
+            />
+            <BannerBoxV2
+              info="left"
+              image={
+                "https://serviceapi.spicezgold.com/download/1757183705017_1737020250515_New_Project_47.jpg"
+              }
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Free Shipping + Ads Banner */}
       <section className="py-0 lg:py-4 pt-0 lg:pt-8 pb-0 bg-white">
         <div className="container">
@@ -131,7 +158,7 @@ const Home = () => {
         </div>
       </section>
       <Footer />
-    </div>
+    </>
   );
 };
 

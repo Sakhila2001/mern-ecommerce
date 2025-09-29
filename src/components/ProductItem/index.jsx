@@ -2,7 +2,6 @@ import React from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
 import Rating from "@mui/material/Rating";
-// import { Button } from "@mui/material/Button";
 import Button from "@mui/material/Button";
 
 import { FaRegHeart } from "react-icons/fa";

@@ -8,7 +8,7 @@ import { IoChatboxOutline } from "react-icons/io5";
 
 import "./style.css";
 import { Link } from "react-router-dom";
-import { Button } from "@mui/material";
+import Button from "@mui/material/Button";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
 
@@ -252,7 +252,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <br />
+      
     </>
   );
 };
