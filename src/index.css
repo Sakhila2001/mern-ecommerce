@@ -143,11 +143,73 @@ nav ul button:hover {
   color: var(--primary-color) !important;
 }
 
-.bg-primary{
+.bg-primary {
   background-color: var(--primary-color) !important;
-} 
+}
 .productSlider .swiper-wrapper {
   padding: 15px;
   margin-left: -15px;
   margin-right: -15px;
+}
+.btn-org {
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(255, 255, 255) !important;
+  background: rgb(255, 82, 82) !important;
+  padding: 7px 20px !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: transparent !important;
+  border-image: initial !important;
+}
+
+footer form input::placeholder {
+  font-size: 14px !important;
+  /* color: #fff !important; */
+}
+
+.css-p6iyue-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root.Mui-checked,
+.css-p6iyue-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+  color: var(--primary-color) !important;
+}
+
+.MuiFormControlLabel-label {
+  font-size: 13px !important;
+  color: #000 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ff5252 !important;
+}
+.homeSlider2 .swiper-slide-active .info {
+  right: 0px !important;
+  opacity: 1;
+}
+.homeSlider2 .swiper-slide-active .info h4 {
+  right: 0px !important;
+  opacity: 1;
+}
+.homeSlider2 .swiper-slide-active .info h3 {
+  right: 0px !important;
+  opacity: 1;
+}
+.homeSlider2 .swiper-slide-active .info h2 {
+  right: 0px !important;
+  opacity: 1;
+}
+.homeSlider2 .swiper-slide-active .info .btn_ {
+  right: 0px !important;
+  opacity: 1;
+}
+.homeSlider2 .info h4 {
+  transition-duration: 1.2s;
+}
+.homeSlider2 .info h2 {
+  transition-duration: 1.5s;
+}
+.homeSlider2 .info h3 {
+  transition-duration: 1.8s;
+}
+.homeSlider2 .info .btn_ {
+  transition-duration: 2.1s;
 }

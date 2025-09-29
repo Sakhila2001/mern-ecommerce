@@ -1,7 +1,5 @@
 import React from "react";
 import "./style.css";
-// import Button from '@mui/material/Button';
-// import { Button } from "@mui/material";
 import Button from "@mui/material/Button";
 
 import { IoMdSearch } from "react-icons/io";
