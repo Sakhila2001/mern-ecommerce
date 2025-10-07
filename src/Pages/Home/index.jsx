@@ -13,9 +13,9 @@ import "swiper/css/navigation";
 
 import { Navigation } from "swiper/modules";
 import BlogItem from "../../components/BlogItem";
-import Footer from "../../components/Footer";
 import HomeBannerV2 from "../../components/HomeSliderV2";
 import BannerBoxV2 from "../../components/bannerBoxV2";
+import AdsBannerSliderV2 from "../../components/AdsBannerSliderV2";
 
 const Home = () => {
   const [value, setValue] = React.useState(0);
@@ -107,7 +107,7 @@ const Home = () => {
           </div>
 
           {/* Ads Banner Slider */}
-          <AdsBannerSlider items={4} />
+          <AdsBannerSliderV2 items={4} />
         </div>
       </section>
       <section className="py-5 pt-0 bg-white">
@@ -157,7 +157,6 @@ const Home = () => {
           </Swiper>
         </div>
       </section>
-      <Footer />
     </>
   );
 };
