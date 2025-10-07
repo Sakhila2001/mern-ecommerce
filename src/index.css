@@ -162,7 +162,9 @@ nav ul button:hover {
   border-color: transparent !important;
   border-image: initial !important;
 }
-
+.btn-org:hover {
+  background-color: #171717 !important;
+}
 footer form input::placeholder {
   font-size: 14px !important;
   /* color: #fff !important; */
@@ -213,3 +215,17 @@ footer form input::placeholder {
 .homeSlider2 .info .btn_ {
   transition-duration: 2.1s;
 }
+.MuiCheckbox-root {
+  padding: 6px !important;
+}
+
+.itemViewActions button.active svg {
+  color: var(--primary-color) !important;
+  opacity: 1 !important;
+}
+.Mui-selected.MuiPaginationItem-page {
+  background-color: var(--primary-color) !important;
+  color: #fff !important;
+
+}
+ 
